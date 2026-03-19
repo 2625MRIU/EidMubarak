@@ -1,0 +1,159 @@
+:root{
+--night:#02040a;
+--pashtun-cream:#f9f5e8;
+--deep-red:#8b0000;
+--gold:#c5a059;
+}
+
+body,html{
+margin:0;
+padding:0;
+background:var(--night);
+overflow:hidden;
+font-family:'Poppins',sans-serif;
+}
+
+#night-scene{
+position:fixed;
+width:100%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:10;
+}
+
+.canvas-bg{
+position:absolute;
+top:0;
+left:0;
+z-index:-1;
+}
+
+.moon-container{
+position:relative;
+width:200px;
+height:200px;
+filter:drop-shadow(0 0 30px rgba(255,253,208,0.4));
+cursor:pointer;
+}
+
+.moon-shape{
+width:100%;
+height:100%;
+background:#fffdd0;
+border-radius:50%;
+clip-path:circle(50% at 70% 50%);
+}
+
+#eid-title{
+position:absolute;
+color:var(--gold);
+font-family:'Cinzel Decorative',serif;
+font-size:3rem;
+text-align:center;
+opacity:0;
+pointer-events:none;
+text-shadow:0 0 30px rgba(197,160,89,0.6);
+}
+
+#pashtun-scene{
+position:fixed;
+width:100%;
+height:100%;
+background:var(--pashtun-cream);
+display:none;
+opacity:0;
+z-index:5;
+}
+
+.ethnic-border{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+border:25px solid transparent;
+border-image:url('https://www.transparenttextures.com/patterns/az-subtle.png') 30 repeat;
+box-sizing:border-box;
+pointer-events:none;
+}
+
+.content-wrapper{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+height:100%;
+text-align:center;
+color:var(--deep-red);
+}
+
+.greeting-pashto{
+font-family:'Noto Sans Arabic',sans-serif;
+font-size:3rem;
+margin:0;
+}
+
+.subtitle{
+letter-spacing:2px;
+font-weight:500;
+}
+
+.people-row{
+display:flex;
+gap:40px;
+margin:40px 0;
+}
+
+.person{
+width:120px;
+text-align:center;
+animation:float 4s infinite ease-in-out;
+}
+
+.person svg{
+fill:var(--deep-red);
+width:80px;
+}
+
+.delay{
+animation-delay:1s;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+}
+
+.gift-trunk{
+width:180px;
+height:120px;
+background:var(--deep-red);
+border:4px solid var(--gold);
+border-radius:10px;
+position:relative;
+cursor:pointer;
+display:flex;
+align-items:center;
+justify-content:center;
+color:var(--gold);
+font-weight:bold;
+overflow:hidden;
+box-shadow:0 15px 35px rgba(139,0,0,0.3);
+}
+
+.trunk-lid{
+position:absolute;
+top:0;
+width:100%;
+height:40%;
+background:#600000;
+border-bottom:2px solid var(--gold);
+transform-origin:top;
+transition:0.5s;
+}
+
+.gift-trunk:hover .trunk-lid{
+transform:rotateX(-110deg);
+}

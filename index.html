@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pashtun Eid Mubarak</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Noto+Sans+Arabic:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+<div id="night-scene">
+<canvas id="starsCanvas" class="canvas-bg"></canvas>
+
+<div class="moon-container">
+<div class="moon-shape" id="moon"></div>
+</div>
+
+<h1 id="eid-title">EID MUBARAK</h1>
+</div>
+
+<div id="pashtun-scene">
+<div class="ethnic-border"></div>
+
+<div class="content-wrapper">
+<h2 class="greeting-pashto">اختر مو مبارک شه</h2>
+<p class="subtitle">STAY BLESSED, KHPALA</p>
+
+<div class="people-row">
+<div class="person">
+<svg viewBox="0 0 100 100">
+<circle cx="50" cy="30" r="20"/>
+<path d="M20 90 Q50 40 80 90 Z"/>
+</svg>
+<p>To You</p>
+</div>
+
+<div class="person delay">
+<svg viewBox="0 0 100 100">
+<circle cx="50" cy="30" r="20"/>
+<path d="M15 95 L85 95 L50 45 Z"/>
+</svg>
+<p>To Your Family</p>
+</div>
+</div>
+
+<div class="gift-trunk" id="gift">
+<div class="trunk-lid"></div>
+CLAIM EIDI
+</div>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
